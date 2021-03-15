@@ -1,9 +1,9 @@
 ---
 title:  "Welcome to my blog"
-excerpt: "Welcome to my blog"
+# excerpt: "Welcome to my blog"
 toc: true # table of contents
 toc_sticky: true
-toc_label: "페이지 주요 목차"
+# toc_label: "페이지 주요 목차"
 categories:
   - Blog
 tags:
