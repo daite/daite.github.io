@@ -39,7 +39,7 @@ theme_mode: # follows system preference; toggle available in sidebar
 
 cdn:
 
-avatar: /assets/img/avatar.png
+avatar:
 
 social_preview_image:
 
