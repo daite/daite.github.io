@@ -1,0 +1,14 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* hide blank avatar circle in sidebar */
+#avatar {
+  display: none !important;
+}
