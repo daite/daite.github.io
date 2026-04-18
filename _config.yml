@@ -35,11 +35,9 @@ analytics:
 pageviews:
   provider:
 
-theme_mode: # follows system preference; toggle available in sidebar
+theme_mode: light
 
 cdn:
-
-avatar:
 
 social_preview_image:
 
