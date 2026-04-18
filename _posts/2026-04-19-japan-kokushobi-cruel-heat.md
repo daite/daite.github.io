@@ -19,7 +19,7 @@ Break the kanji apart and you get the full force of it:
 | 暑 | sho | heat, summer warmth |
 | 日 | bi / nichi | day |
 
-*酷* is the same character used in *zangyaku* (残酷) — brutal, atrocious. The agency did not reach for a polite euphemism. A *kokushobi* is, literally, a **cruelly hot day**.
+*酷* is the same character used in *zankoku* (残酷) — brutal, atrocious. The agency did not reach for a polite euphemism. A *kokushobi* is, literally, a **cruelly hot day**.
 
 The naming follows a long Japanese tradition of giving precise meteorological vocabulary to atmospheric states that other languages treat as a single undifferentiated "hot". The full ladder now looks like this:
 
