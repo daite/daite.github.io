@@ -1,0 +1,132 @@
+# The Site Configuration
+
+theme: jekyll-theme-chirpy
+
+lang: en
+
+timezone: Asia/Seoul
+
+title: daite
+
+tagline: "Day: Go, Night: Rust"
+
+description: >-
+  A developer blog from Seoul about Go, Rust, and systems programming.
+
+url: "https://daite.github.io"
+
+github:
+  username: daite
+
+social:
+  name: daite
+  email: ""
+  links:
+    - https://github.com/daite
+
+webmaster_verifications:
+  google:
+  bing:
+
+analytics:
+  google:
+    id:
+
+pageviews:
+  provider:
+
+theme_mode: # follows system preference; toggle available in sidebar
+
+cdn:
+
+avatar: /assets/img/avatar.png
+
+social_preview_image:
+
+toc: true
+
+comments:
+  provider:
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+baseurl: ""
+
+# ------------ Do not modify below this line ------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
