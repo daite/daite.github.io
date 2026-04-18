@@ -6,6 +6,8 @@ lang: en
 
 timezone: Asia/Seoul
 
+future: true
+
 title: daite
 
 tagline: "Day: Go, Night: Rust"
