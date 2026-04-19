@@ -346,9 +346,18 @@ It is also an acknowledgement. The old vocabulary, built in a cooler era, no lon
 
 The charts and maps in this post are pure inline SVG — no JavaScript, no external libraries. The underlying data was fetched from JMA's ETRN portal and the coordinates were computed in Python.
 
+The full implementation is available at [`code/fetch_jma.py`](https://github.com/daite/daite.github.io/blob/main/code/fetch_jma.py). The key pieces are explained below.
+
 ### Fetching JMA daily temperature data
 
-JMA exposes daily station data through a predictable URL pattern. The script below pulls the full June–September window for any station and returns a flat list of daily maximum temperatures.
+JMA exposes daily station data through a predictable URL pattern. The script pulls the full June–September window for any station and writes CSV to stdout:
+
+```bash
+python3 code/fetch_jma.py                  # print to terminal
+python3 code/fetch_jma.py > summer.csv     # save to file
+```
+
+The core parser extracts the `最高気温` column (index 7) from each data row:
 
 ```python
 import urllib.request
