@@ -342,6 +342,148 @@ Language matters in public health. Studies of typhoon preparedness have repeated
 
 It is also an acknowledgement. The old vocabulary, built in a cooler era, no longer fits the weather Japan is living through. Adding a rung at the top of the ladder is not an act of resignation — it is the necessary precondition for talking clearly about what is coming.
 
+## How this was built
+
+The charts and maps in this post are pure inline SVG — no JavaScript, no external libraries. The underlying data was fetched from JMA's ETRN portal and the coordinates were computed in Python.
+
+### Fetching JMA daily temperature data
+
+JMA exposes daily station data through a predictable URL pattern. The script below pulls the full June–September window for any station and returns a flat list of daily maximum temperatures.
+
+```python
+import urllib.request
+from html.parser import HTMLParser
+
+ETRN = "https://www.data.jma.go.jp/stats/etrn/view/daily_s1.php"
+
+class MaxTempParser(HTMLParser):
+    """Extract daily maximum temperature (最高気温) column from JMA table."""
+    def __init__(self):
+        super().__init__()
+        self._in_td = False
+        self._col = 0
+        self._row = []
+        self.rows = []         # list of (day, max_temp)
+        self._target_col = 4  # 0-indexed column for 最高気温
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "tr":
+            self._row = []
+            self._col = 0
+        if tag == "td":
+            self._in_td = True
+
+    def handle_endtag(self, tag):
+        if tag == "td":
+            self._in_td = False
+            self._col += 1
+        if tag == "tr" and self._row:
+            self.rows.append(self._row[:])
+
+    def handle_data(self, data):
+        if self._in_td:
+            self._row.append(data.strip())
+
+
+def fetch_monthly(prec_no: int, block_no: int, year: int, month: int) -> list[float]:
+    url = (f"{ETRN}?prec_no={prec_no}&block_no={block_no}"
+           f"&year={year}&month={month}&day=1&view=")
+    with urllib.request.urlopen(url) as r:
+        html = r.read().decode("utf-8", errors="replace")
+    parser = MaxTempParser()
+    parser.feed(html)
+    temps = []
+    for row in parser.rows:
+        if len(row) > parser._target_col:
+            try:
+                temps.append(float(row[parser._target_col]))
+            except ValueError:
+                pass
+    return temps
+
+
+def fetch_summer(prec_no: int, block_no: int, year: int) -> list[float]:
+    """Return daily max temps for June–September of the given year."""
+    data = []
+    for month in [6, 7, 8, 9]:
+        data.extend(fetch_monthly(prec_no, block_no, year, month))
+    return data
+
+
+# Example: Tokyo station (prec_no=44, block_no=47662)
+tokyo_2024 = fetch_summer(44, 47662, 2024)
+print(f"Tokyo 2024 peak: {max(tokyo_2024):.1f}°C")
+```
+
+### Computing SVG polyline coordinates
+
+Once the daily values are in a flat list, mapping them to SVG pixel space is straightforward — define the chart bounds, then linearly interpolate.
+
+```python
+def make_polyline(
+    temps: list[float],
+    chart_l=55, chart_r=740,
+    chart_t=40, chart_b=320,
+    temp_min=20, temp_max=42,
+) -> str:
+    n = len(temps)
+    points = []
+    for i, t in enumerate(temps):
+        x = chart_l + i * (chart_r - chart_l) / (n - 1)
+        y = chart_b - (t - temp_min) * (chart_b - chart_t) / (temp_max - temp_min)
+        points.append(f"{x:.1f},{y:.1f}")
+    return " ".join(points)
+
+
+polyline_pts = make_polyline(tokyo_2024)
+svg_fragment = f'<polyline points="{polyline_pts}" fill="none" stroke="#4e79a7" stroke-width="1.5"/>'
+```
+
+### Projecting stations onto a Japan map
+
+For the heatmap, station coordinates (latitude, longitude) are converted to SVG pixels using an equirectangular projection corrected for the cosine of the mid-latitude.
+
+```python
+import math
+
+LAT_MIN, LAT_MAX = 30.5, 45.5
+LON_MIN, LON_MAX = 129.0, 146.0
+PANEL_W, PANEL_H = 300, 370
+MARGIN = 20
+
+def svg_x(lon: float, offset: float = 0) -> float:
+    return offset + MARGIN + (lon - LON_MIN) / (LON_MAX - LON_MIN) * PANEL_W
+
+def svg_y(lat: float) -> float:
+    return MARGIN + (LAT_MAX - lat) / (LAT_MAX - LAT_MIN) * PANEL_H
+
+def temp_color(t: float) -> str:
+    if t >= 41.5: return "#c00000"
+    if t >= 41.0: return "#d83000"
+    if t >= 40.5: return "#e86000"
+    if t >= 40.2: return "#f09000"
+    return "#f0c040"
+
+stations = [
+    (36.32, 139.20, 41.8, "Isesaki"),
+    (36.00, 139.32, 41.4, "Hatoyama"),
+    # …
+]
+
+circles = []
+for lat, lon, temp, name in stations:
+    x = svg_x(lon)
+    y = svg_y(lat)
+    r = 3 + (temp - 40) * 7          # radius scales with excess above 40°C
+    c = temp_color(temp)
+    circles.append(
+        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" '
+        f'fill="{c}" fill-opacity="0.85" stroke="white" stroke-width="0.7"/>'
+    )
+```
+
+The island polygon coordinates are computed the same way — a list of `(lat, lon)` coastal waypoints fed through `svg_x` / `svg_y` — and the resulting pixel strings are dropped directly into `<polygon points="…">` elements. No rendering engine, no canvas: everything resolves to a static string that Jekyll embeds as-is.
+
 ## References
 
 - NHK Web News — [酷暑日とは？ 気象庁が新しい用語を制定](https://news.web.nhk/newsweb/na/na-k10015101371000) (April 2026)
