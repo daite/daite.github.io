@@ -124,40 +124,41 @@ The dashed red line marks the kokushobi threshold. At these three stations the l
 
 <details>
 <summary>Show all 30 observations ▸</summary>
-
-| Date | Station | Prefecture | °C |
-|------|---------|-----------|-----|
-| Jul 30 | Kaibara (丹波市) | Hyogo | 41.2 |
-| Jul 30 | Fukuchiyama | Kyoto | 40.6 |
-| Jul 30 | Kuse | Okayama | 40.3 |
-| Jul 30 | Nishi-Waki | Hyogo | 40.0 |
-| Jul 31 | Takahashi | Okayama | 40.4 |
-| Aug 1 | Kuwana | Mie | 40.4 |
-| Aug 2 | Isesaki | Gunma | 40.1 |
-| Aug 2 | Maebashi | Gunma | 40.0 |
-| Aug 2 | Kake | Hiroshima | 40.0 |
-| Aug 4 | Komatsu | Ishikawa | 40.3 |
-| **Aug 5** | **Isesaki** | **Gunma** | **41.8 ★ national record** |
-| Aug 5 | Hatoyama | Saitama | 41.4 |
-| Aug 5 | Kiryu | Gunma | 41.2 |
-| Aug 5 | Maebashi | Gunma | 41.0 |
-| Aug 5 | Kumagaya | Saitama | 40.7 |
-| Aug 5 | Koga | Ibaraki | 40.6 |
-| Aug 5 | Kamisatomi | Gunma | 40.5 |
-| Aug 5 | Ome | Tokyo | 40.4 |
-| Aug 5 | Sano | Tochigi | 40.2 |
-| Aug 5 | Tatebayashi | Gunma | 40.2 |
-| Aug 5 | Hachioji | Tokyo | 40.3 |
-| Aug 5 | Chichibu | Saitama | 40.0 |
-| Aug 5 | Tokorozawa | Saitama | 40.0 |
-| Aug 5 | Fuchu | Tokyo | 40.0 |
-| Aug 6 | Shizuoka | Shizuoka | 41.4 |
-| Aug 30 | Hatoyama | Saitama | 40.3 |
-| Aug 30 | Kumagaya | Saitama | 40.2 |
-| Aug 30 | Hamamatsu | Shizuoka | 40.2 |
-| Aug 30 | Kuwana | Mie | 40.5 |
-| Aug 31 | Nagoya | Aichi | 40.0 |
-
+<table>
+<thead><tr><th>Date</th><th>Station</th><th>Prefecture</th><th>°C</th></tr></thead>
+<tbody>
+<tr><td>Jul 30</td><td>Kaibara (丹波市)</td><td>Hyogo</td><td>41.2</td></tr>
+<tr><td>Jul 30</td><td>Fukuchiyama</td><td>Kyoto</td><td>40.6</td></tr>
+<tr><td>Jul 30</td><td>Kuse</td><td>Okayama</td><td>40.3</td></tr>
+<tr><td>Jul 30</td><td>Nishi-Waki</td><td>Hyogo</td><td>40.0</td></tr>
+<tr><td>Jul 31</td><td>Takahashi</td><td>Okayama</td><td>40.4</td></tr>
+<tr><td>Aug 1</td><td>Kuwana</td><td>Mie</td><td>40.4</td></tr>
+<tr><td>Aug 2</td><td>Isesaki</td><td>Gunma</td><td>40.1</td></tr>
+<tr><td>Aug 2</td><td>Maebashi</td><td>Gunma</td><td>40.0</td></tr>
+<tr><td>Aug 2</td><td>Kake</td><td>Hiroshima</td><td>40.0</td></tr>
+<tr><td>Aug 4</td><td>Komatsu</td><td>Ishikawa</td><td>40.3</td></tr>
+<tr style="font-weight:600;background:rgba(200,0,0,0.08)"><td>Aug 5</td><td>Isesaki</td><td>Gunma</td><td>41.8 ★ national record</td></tr>
+<tr><td>Aug 5</td><td>Hatoyama</td><td>Saitama</td><td>41.4</td></tr>
+<tr><td>Aug 5</td><td>Kiryu</td><td>Gunma</td><td>41.2</td></tr>
+<tr><td>Aug 5</td><td>Maebashi</td><td>Gunma</td><td>41.0</td></tr>
+<tr><td>Aug 5</td><td>Kumagaya</td><td>Saitama</td><td>40.7</td></tr>
+<tr><td>Aug 5</td><td>Koga</td><td>Ibaraki</td><td>40.6</td></tr>
+<tr><td>Aug 5</td><td>Kamisatomi</td><td>Gunma</td><td>40.5</td></tr>
+<tr><td>Aug 5</td><td>Ome</td><td>Tokyo</td><td>40.4</td></tr>
+<tr><td>Aug 5</td><td>Hachioji</td><td>Tokyo</td><td>40.3</td></tr>
+<tr><td>Aug 5</td><td>Sano</td><td>Tochigi</td><td>40.2</td></tr>
+<tr><td>Aug 5</td><td>Tatebayashi</td><td>Gunma</td><td>40.2</td></tr>
+<tr><td>Aug 5</td><td>Chichibu</td><td>Saitama</td><td>40.0</td></tr>
+<tr><td>Aug 5</td><td>Tokorozawa</td><td>Saitama</td><td>40.0</td></tr>
+<tr><td>Aug 5</td><td>Fuchu</td><td>Tokyo</td><td>40.0</td></tr>
+<tr><td>Aug 6</td><td>Shizuoka</td><td>Shizuoka</td><td>41.4</td></tr>
+<tr><td>Aug 30</td><td>Hatoyama</td><td>Saitama</td><td>40.3</td></tr>
+<tr><td>Aug 30</td><td>Kumagaya</td><td>Saitama</td><td>40.2</td></tr>
+<tr><td>Aug 30</td><td>Hamamatsu</td><td>Shizuoka</td><td>40.2</td></tr>
+<tr><td>Aug 30</td><td>Kuwana</td><td>Mie</td><td>40.5</td></tr>
+<tr><td>Aug 31</td><td>Nagoya</td><td>Aichi</td><td>40.0</td></tr>
+</tbody>
+</table>
 </details>
 
 The chart below covers the same June–September window with the same three stations. Peak readings at these locations: Tokyo 38.5°C (30 August), Osaka 38.7°C (29 July), Kofu 39.6°C (2 August) — all below 40°C, yet the season's overall intensity is visible in the sustained high baseline.
