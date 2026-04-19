@@ -49,9 +49,9 @@ In 2024, nine JMA stations recorded at least one day at or above 40°C — the m
 | Aug 9 | Kuwana | Mie | 40.4 |
 | Aug 16 | Mino | Gifu | 40.0 |
 
-The chart below plots every daily maximum at Tokyo, Osaka, and Kofu (甲府) — three large, well-known stations — to show the season's shape. Note that none of these three crossed 40°C; the kokushobi events happened at smaller inland stations further from the coast.
+The chart below plots every daily maximum at Tokyo, Osaka, Kofu (甲府), and **Sano (佐野, Tochigi)** — Sano was the 2024 peak station at 41.0°C on 29 July, the only reading that crossed the kokushobi threshold that summer.
 
-<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
+<svg viewBox="0 0 760 445" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
 
   <!-- title -->
   <text x="397" y="24" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Daily Maximum Temperature — Japan Summer 2024 (JMA)</text>
@@ -101,22 +101,26 @@ The chart below plots every daily maximum at Tokyo, Osaka, and Kofu (甲府) —
   <polyline points="55.0,225.8 60.7,276.7 66.3,251.3 72.0,236.0 77.6,205.5 83.3,223.3 89.0,213.1 94.6,197.8 100.3,248.7 106.0,208.0 111.6,180.0 117.3,164.7 122.9,192.7 128.6,146.9 134.3,159.6 139.9,197.8 145.6,186.4 151.2,320.0 156.9,174.9 162.6,210.5 168.2,299.6 173.9,211.8 179.5,286.9 185.2,164.7 190.9,152.0 196.5,152.0 202.2,196.5 207.9,285.6 213.5,186.4 219.2,239.8 224.8,216.9 230.5,177.5 236.2,132.9 241.8,104.9 247.5,107.5 253.1,154.5 258.8,74.4 264.5,177.5 270.1,232.2 275.8,194.0 281.4,218.2 287.1,272.9 292.8,181.3 298.4,194.0 304.1,182.5 309.8,238.5 315.4,158.4 321.1,122.7 326.7,145.6 332.4,102.4 338.1,108.7 343.7,73.1 349.4,88.4 355.0,146.9 360.7,107.5 366.4,104.9 372.0,89.6 377.7,99.8 383.3,75.6 389.0,98.5 394.7,107.5 400.3,102.4 406.0,96.0 411.7,93.5 417.3,90.9 423.0,102.4 428.6,108.7 434.3,118.9 440.0,113.8 445.6,110.0 451.3,111.3 456.9,96.0 462.6,102.4 468.3,96.0 473.9,124.0 479.6,125.3 485.2,176.2 490.9,89.6 496.6,107.5 502.2,113.8 507.9,124.0 513.6,116.4 519.2,143.1 524.9,120.2 530.5,112.5 536.2,159.6 541.9,130.4 547.5,225.8 553.2,248.7 558.8,236.0 564.5,200.4 570.2,172.4 575.8,186.4 581.5,135.5 587.1,162.2 592.8,153.3 598.5,145.6 604.1,127.8 609.8,130.4 615.5,126.5 621.1,134.2 626.8,129.1 632.4,125.3 638.1,124.0 643.8,145.6 649.4,134.2 655.1,143.1 660.7,143.1 666.4,143.1 672.1,117.6 677.7,144.4 683.4,118.9 689.0,186.4 694.7,204.2 700.4,191.5 706.0,242.4 711.7,262.7 717.4,174.9 723.0,210.5 728.7,206.7 734.3,252.5 740.0,200.4"
     fill="none" stroke="#e15759" stroke-width="1.5" stroke-linejoin="round" opacity="0.85"/>
 
-  <!-- legend -->
-  <line x1="90"  y1="375" x2="110" y2="375" stroke="#4e79a7" stroke-width="2"/>
-  <text x="114" y="379" fill="currentColor">Tokyo (47662)</text>
+  <!-- Sano / 佐野 (AMeDAS 41/1018) — 2024 peak station, 41.0°C on Jul 29 -->
+  <polyline points="55.0,228.4 60.7,303.5 66.3,239.8 72.0,239.8 77.6,214.4 83.3,218.2 89.0,218.2 94.6,194.0 100.3,229.6 106.0,269.1 111.6,160.9 117.3,163.5 122.9,206.7 128.6,129.1 134.3,162.2 139.9,167.3 145.6,162.2 151.2,288.2 156.9,169.8 162.6,163.5 168.2,269.1 173.9,182.5 179.5,251.3 185.2,106.2 190.9,171.1 196.5,164.7 202.2,188.9 207.9,272.9 213.5,177.5 219.2,223.3 224.8,190.2 230.5,166.0 236.2,171.1 241.8,107.5 247.5,98.5 253.1,146.9 258.8,92.2 264.5,103.6 270.1,173.6 275.8,176.2 281.4,204.2 287.1,248.7 292.8,163.5 298.4,251.3 304.1,214.4 309.8,261.5 315.4,167.3 321.1,149.5 326.7,132.9 332.4,99.8 338.1,106.2 343.7,76.9 349.4,93.5 355.0,89.6 360.7,94.7 366.4,106.2 372.0,111.3 377.7,90.9 383.3,52.7 389.0,84.5 394.7,103.6 400.3,127.8 406.0,115.1 411.7,97.3 417.3,87.1 423.0,113.8 428.6,135.5 434.3,113.8 440.0,121.5 445.6,111.3 451.3,99.8 456.9,82.0 462.6,83.3 468.3,94.7 473.9,135.5 479.6,112.5 485.2,180.0 490.9,85.8 496.6,115.1 502.2,130.4 507.9,126.5 513.6,135.5 519.2,173.6 524.9,130.4 530.5,116.4 536.2,143.1 541.9,131.6 547.5,144.4 553.2,176.2 558.8,183.8 564.5,205.5 570.2,160.9 575.8,172.4 581.5,124.0 587.1,218.2 592.8,162.2 598.5,152.0 604.1,130.4 609.8,127.8 615.5,122.7 621.1,146.9 626.8,134.2 632.4,115.1 638.1,108.7 643.8,122.7 649.4,129.1 655.1,117.6 660.7,192.7 666.4,144.4 672.1,136.7 677.7,180.0 683.4,136.7 689.0,213.1 694.7,244.9 700.4,228.4 706.0,251.3 711.7,234.7 717.4,172.4 723.0,228.4 728.7,202.9 734.3,258.9 740.0,230.9"
+    fill="none" stroke="#9467bd" stroke-width="1.8" stroke-linejoin="round" opacity="0.9"/>
 
-  <line x1="242" y1="375" x2="262" y2="375" stroke="#f28e2b" stroke-width="2"/>
-  <text x="266" y="379" fill="currentColor">Osaka (47772)</text>
-
-  <line x1="400" y1="375" x2="420" y2="375" stroke="#e15759" stroke-width="2"/>
-  <text x="424" y="379" fill="currentColor">Kofu / 甲府 (47638)</text>
-
-  <line x1="578" y1="375" x2="598" y2="375" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <text x="602" y="379" fill="#cc0000">酷暑日 threshold</text>
+  <!-- legend row 1 -->
+  <line x1="55"  y1="376" x2="75"  y2="376" stroke="#4e79a7" stroke-width="2"/>
+  <text x="79"  y="380" fill="currentColor">Tokyo (47662)</text>
+  <line x1="185" y1="376" x2="205" y2="376" stroke="#f28e2b" stroke-width="2"/>
+  <text x="209" y="380" fill="currentColor">Osaka (47772)</text>
+  <line x1="315" y1="376" x2="335" y2="376" stroke="#e15759" stroke-width="2"/>
+  <text x="339" y="380" fill="currentColor">Kofu / 甲府 (47638)</text>
+  <line x1="470" y1="376" x2="490" y2="376" stroke="#9467bd" stroke-width="2"/>
+  <text x="494" y="380" fill="currentColor">Sano / 佐野 (41/1018)</text>
+  <!-- legend row 2 -->
+  <line x1="55"  y1="396" x2="75"  y2="396" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="79"  y="400" fill="#cc0000">酷暑日 threshold (40°C)</text>
 
 </svg>
 
-The dashed red line marks the kokushobi threshold. At these three stations the line was never crossed in 2024 — Kofu came closest at 39.4°C on 22 July.
+The dashed red line marks the kokushobi threshold. Sano crossed it on 29 July — the only station in this chart to do so in 2024 — while Tokyo, Osaka, and Kofu peaked just below it.
 
 ## 2025: Three times as many crossings, a new national record
 
@@ -161,9 +165,9 @@ The dashed red line marks the kokushobi threshold. At these three stations the l
 </table>
 </details>
 
-The chart below covers the same June–September window with the same three stations. Peak readings at these locations: Tokyo 38.5°C (30 August), Osaka 38.7°C (29 July), Kofu 39.6°C (2 August) — all below 40°C, yet the season's overall intensity is visible in the sustained high baseline.
+The chart below covers the same June–September window with the same three stations, plus **Isesaki (伊勢崎, Gunma)** — the station that set Japan's all-time record of 41.8°C on 5 August 2025.
 
-<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
+<svg viewBox="0 0 760 445" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
 
   <text x="397" y="24" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Daily Maximum Temperature — Japan Summer 2025 (JMA)</text>
 
@@ -204,15 +208,22 @@ The chart below covers the same June–September window with the same three stat
   <polyline points="55.0,229.6 60.7,237.3 66.3,312.4 72.0,223.3 77.6,188.9 83.3,197.8 89.0,192.7 94.6,230.9 100.3,222.0 106.0,306.0 111.6,260.2 117.3,242.4 122.9,211.8 128.6,279.3 134.3,180.0 139.9,180.0 145.6,88.4 151.2,113.8 156.9,112.5 162.6,141.8 168.2,146.9 173.9,150.7 179.5,195.3 185.2,211.8 190.9,173.6 196.5,163.5 202.2,129.1 207.9,124.0 213.5,126.5 219.2,107.5 224.8,125.3 230.5,176.2 236.2,122.7 241.8,125.3 247.5,124.0 253.1,94.7 258.8,117.6 264.5,107.5 270.1,113.8 275.8,113.8 281.4,138.0 287.1,163.5 292.8,127.8 298.4,121.5 304.1,243.6 309.8,200.4 315.4,186.4 321.1,149.5 326.7,148.2 332.4,129.1 338.1,112.5 343.7,118.9 349.4,115.1 355.0,101.1 360.7,110.0 366.4,107.5 372.0,116.4 377.7,103.6 383.3,83.3 389.0,85.8 394.7,107.5 400.3,103.6 406.0,70.5 411.7,76.9 417.3,107.5 423.0,82.0 428.6,80.7 434.3,178.7 440.0,113.8 445.6,163.5 451.3,206.7 456.9,199.1 462.6,214.4 468.3,135.5 473.9,146.9 479.6,97.3 485.2,157.1 490.9,108.7 496.6,102.4 502.2,92.2 507.9,85.8 513.6,101.1 519.2,99.8 524.9,90.9 530.5,80.7 536.2,113.8 541.9,115.1 547.5,101.1 553.2,126.5 558.8,116.4 564.5,82.0 570.2,83.3 575.8,106.2 581.5,96.0 587.1,85.8 592.8,171.1 598.5,236.0 604.1,148.2 609.8,141.8 615.5,94.7 621.1,126.5 626.8,131.6 632.4,166.0 638.1,229.6 643.8,229.6 649.4,195.3 655.1,143.1 660.7,130.4 666.4,122.7 672.1,145.6 677.7,251.3 683.4,295.8 689.0,158.4 694.7,230.9 700.4,238.5 706.0,208.0 711.7,228.4 717.4,149.5 723.0,197.8 728.7,197.8 734.3,168.5 740.0,229.6"
     fill="none" stroke="#e15759" stroke-width="1.5" stroke-linejoin="round" opacity="0.85"/>
 
-  <!-- legend -->
-  <line x1="90"  y1="375" x2="110" y2="375" stroke="#4e79a7" stroke-width="2"/>
-  <text x="114" y="379" fill="currentColor">Tokyo (47662)</text>
-  <line x1="242" y1="375" x2="262" y2="375" stroke="#f28e2b" stroke-width="2"/>
-  <text x="266" y="379" fill="currentColor">Osaka (47772)</text>
-  <line x1="400" y1="375" x2="420" y2="375" stroke="#e15759" stroke-width="2"/>
-  <text x="424" y="379" fill="currentColor">Kofu / 甲府 (47638)</text>
-  <line x1="578" y1="375" x2="598" y2="375" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <text x="602" y="379" fill="#cc0000">酷暑日 threshold</text>
+  <!-- Isesaki / 伊勢崎 (AMeDAS 42/1021) — 2025 national record 41.8°C on Aug 5 -->
+  <polyline points="55.0,248.7 60.7,248.7 66.3,307.3 72.0,208.0 77.6,172.4 83.3,195.3 89.0,174.9 94.6,219.5 100.3,210.5 106.0,292.0 111.6,280.5 117.3,209.3 122.9,269.1 128.6,279.3 134.3,154.5 139.9,167.3 145.6,103.6 151.2,117.6 156.9,117.6 162.6,167.3 168.2,154.5 173.9,108.7 179.5,192.7 185.2,222.0 190.9,209.3 196.5,149.5 202.2,145.6 207.9,118.9 213.5,124.0 219.2,102.4 224.8,110.0 230.5,136.7 236.2,121.5 241.8,132.9 247.5,149.5 253.1,117.6 258.8,117.6 264.5,113.8 270.1,106.2 275.8,136.7 281.4,246.2 287.1,239.8 292.8,176.2 298.4,163.5 304.1,199.1 309.8,162.2 315.4,158.4 321.1,149.5 326.7,135.5 332.4,117.6 338.1,101.1 343.7,101.1 349.4,102.4 355.0,92.2 360.7,93.5 366.4,87.1 372.0,97.3 377.7,89.6 383.3,73.1 389.0,108.7 394.7,134.2 400.3,136.7 406.0,64.2 411.7,94.7 417.3,92.2 423.0,42.5 428.6,75.6 434.3,163.5 440.0,113.8 445.6,163.5 451.3,238.5 456.9,162.2 462.6,220.7 468.3,162.2 473.9,158.4 479.6,106.2 485.2,134.2 490.9,104.9 496.6,103.6 502.2,97.3 507.9,93.5 513.6,94.7 519.2,120.2 524.9,97.3 530.5,82.0 536.2,115.1 541.9,106.2 547.5,97.3 553.2,140.5 558.8,131.6 564.5,80.7 570.2,102.4 575.8,99.8 581.5,89.6 587.1,108.7 592.8,195.3 598.5,213.1 604.1,153.3 609.8,145.6 615.5,124.0 621.1,126.5 626.8,150.7 632.4,185.1 638.1,239.8 643.8,255.1 649.4,157.1 655.1,169.8 660.7,146.9 666.4,117.6 672.1,122.7 677.7,253.8 683.4,274.2 689.0,202.9 694.7,232.2 700.4,253.8 706.0,243.6 711.7,227.1 717.4,163.5 723.0,174.9 728.7,209.3 734.3,152.0 740.0,211.8"
+    fill="none" stroke="#8c0000" stroke-width="1.8" stroke-linejoin="round" opacity="0.9"/>
+
+  <!-- legend row 1 -->
+  <line x1="55"  y1="376" x2="75"  y2="376" stroke="#4e79a7" stroke-width="2"/>
+  <text x="79"  y="380" fill="currentColor">Tokyo (47662)</text>
+  <line x1="185" y1="376" x2="205" y2="376" stroke="#f28e2b" stroke-width="2"/>
+  <text x="209" y="380" fill="currentColor">Osaka (47772)</text>
+  <line x1="315" y1="376" x2="335" y2="376" stroke="#e15759" stroke-width="2"/>
+  <text x="339" y="380" fill="currentColor">Kofu / 甲府 (47638)</text>
+  <line x1="470" y1="376" x2="490" y2="376" stroke="#8c0000" stroke-width="2"/>
+  <text x="494" y="380" fill="currentColor">Isesaki / 伊勢崎 (42/1021) ★</text>
+  <!-- legend row 2 -->
+  <line x1="55"  y1="396" x2="75"  y2="396" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="79"  y="400" fill="#cc0000">酷暑日 threshold (40°C)</text>
 
 </svg>
 
