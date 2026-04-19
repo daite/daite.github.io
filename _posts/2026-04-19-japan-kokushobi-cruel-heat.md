@@ -370,6 +370,10 @@ python3 code/fetch_jma.py > summer.csv     # save to file
 
 The core parser extracts the `最高気温` column (index 7) from each data row:
 
+<details>
+<summary>Show code ▸</summary>
+<div markdown="1">
+
 ```python
 import urllib.request
 from html.parser import HTMLParser
@@ -435,9 +439,16 @@ tokyo_2024 = fetch_summer(44, 47662, 2024)
 print(f"Tokyo 2024 peak: {max(tokyo_2024):.1f}°C")
 ```
 
+</div>
+</details>
+
 ### Computing SVG polyline coordinates
 
 Once the daily values are in a flat list, mapping them to SVG pixel space is straightforward — define the chart bounds, then linearly interpolate.
+
+<details>
+<summary>Show code ▸</summary>
+<div markdown="1">
 
 ```python
 def make_polyline(
@@ -459,9 +470,16 @@ polyline_pts = make_polyline(tokyo_2024)
 svg_fragment = f'<polyline points="{polyline_pts}" fill="none" stroke="#4e79a7" stroke-width="1.5"/>'
 ```
 
+</div>
+</details>
+
 ### Projecting stations onto a Japan map
 
 For the heatmap, station coordinates (latitude, longitude) are converted to SVG pixels using an equirectangular projection corrected for the cosine of the mid-latitude.
+
+<details>
+<summary>Show code ▸</summary>
+<div markdown="1">
 
 ```python
 import math
@@ -501,6 +519,9 @@ for lat, lon, temp, name in stations:
         f'fill="{c}" fill-opacity="0.85" stroke="white" stroke-width="0.7"/>'
     )
 ```
+
+</div>
+</details>
 
 The island polygon coordinates are computed the same way — a list of `(lat, lon)` coastal waypoints fed through `svg_x` / `svg_y` — and the resulting pixel strings are dropped directly into `<polygon points="…">` elements. No rendering engine, no canvas: everything resolves to a static string that Jekyll embeds as-is.
 
