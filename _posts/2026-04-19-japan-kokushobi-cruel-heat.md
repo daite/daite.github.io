@@ -212,6 +212,118 @@ The chart below covers the same June–September window with the same three stat
 
 At the three charted stations Kofu reached 39.6°C in 2025 — 0.4°C short of the threshold. But the station-level picture understates what was happening nationally: 30 kokushobi-level events versus 9 in 2024, spread across more prefectures and reaching further west (Kyoto, Hyogo, Hiroshima, Aichi) than 2024's largely Kanto-Tokai pattern.
 
+## Where the heat landed
+
+The maps below show every station that crossed 40°C in each summer. Circle size and colour both encode temperature — yellow for 40.0°C, scaling up through orange to deep red at the national record.
+
+<svg viewBox="0 0 690 440" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:690px;display:block;margin:2rem auto;font-family:sans-serif;font-size:10px;">
+
+  <!-- panel backgrounds -->
+  <rect x="20" y="20" width="300" height="370" fill="#daeef7" rx="3"/>
+  <rect x="370" y="20" width="300" height="370" fill="#daeef7" rx="3"/>
+
+  <!-- panel titles -->
+  <text x="170" y="14" text-anchor="middle" font-size="11" font-weight="600" fill="currentColor">2024 — 9 events, peak 41.0°C</text>
+  <text x="520" y="14" text-anchor="middle" font-size="11" font-weight="600" fill="currentColor">2025 — 30 events, peak 41.8°C ★</text>
+
+  <!-- ── 2024 map (left, offset=0) ───────────────────────── -->
+  <!-- Hokkaido -->
+  <polygon points="248.4,19.5 244.6,35.0 242.9,58.7 231.8,77.0 223.1,82.4 220.6,94.5 227.2,112.0 235.6,108.1 247.6,95.2 271.5,108.1 291.2,82.2 312.6,73.5 305.9,49.1 289.5,56.5 271.8,48.4 248.4,19.5" fill="#c8dba8" stroke="#90b070" stroke-width="0.7"/>
+  <!-- Honshu -->
+  <polygon points="220.3,124.8 227.2,135.4 237.1,128.5 240.1,117.4 240.6,143.1 248.9,164.5 247.3,173.7 237.1,194.4 232.1,198.3 231.1,209.7 234.9,228.4 227.0,241.5 229.5,261.5 213.2,272.8 207.6,267.4 197.7,276.5 193.6,288.9 182.7,288.9 174.1,286.2 161.5,289.4 157.6,285.7 159.4,297.0 146.9,301.9 139.1,317.7 132.6,310.3 128.9,298.0 134.7,287.6 125.5,287.6 120.4,283.2 107.0,287.1 94.1,293.8 80.9,293.8 76.8,300.0 54.8,304.9 62.4,293.6 70.1,287.1 74.2,281.5 91.5,267.4 112.3,266.7 122.7,265.7 131.7,267.4 144.6,263.0 166.5,216.6 154.6,237.1 164.9,237.1 177.1,227.2 197.4,207.0 211.3,182.8 216.1,162.6 214.6,150.5 227.2,135.4 220.3,124.8" fill="#c8dba8" stroke="#90b070" stroke-width="0.7"/>
+  <!-- Shikoku -->
+  <polygon points="118.8,301.0 119.4,307.9 111.2,314.8 99.9,335.0 83.7,335.0 85.3,317.7 82.6,312.8 85.8,307.9 85.8,305.9 90.2,301.9 94.1,297.5 99.9,295.5 118.8,301.0" fill="#c8dba8" stroke="#90b070" stroke-width="0.7"/>
+  <!-- Kyushu -->
+  <polygon points="54.8,304.9 52.3,306.6 45.1,312.8 32.4,323.4 31.1,332.8 41.5,351.3 41.5,362.9 48.6,372.0 56.7,365.3 63.2,355.0 66.1,342.6 71.2,329.1 66.4,318.0 62.9,315.5 50.5,307.4 54.8,304.9" fill="#c8dba8" stroke="#90b070" stroke-width="0.7"/>
+
+  <!-- region labels (left) -->
+  <text x="249" y="57"  text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Hokkaidō</text>
+  <text x="232" y="162" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Tōhoku</text>
+  <text x="207" y="254" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Kantō</text>
+  <text x="163" y="268" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Chūbu</text>
+  <text x="128" y="284" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Kansai</text>
+  <text x="92"  y="292" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Chūgoku</text>
+  <text x="52"  y="344" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Kyūshū</text>
+
+  <!-- 2024 station circles -->
+  <circle cx="206.7" cy="224.7" r="10.0" fill="#d83000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <text x="220" cy="222" y="222" font-size="7.5" fill="#600">Sano 41.0</text>
+  <circle cx="206.0" cy="248.4" r="4.4" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="200.0" cy="246.4" r="3.7" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="203.4" cy="250.6" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="209.2" cy="249.9" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="175.6" cy="281.5" r="4.4" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="185.9" cy="279.7" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="155.7" cy="277.3" r="5.8" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="159.6" cy="265.4" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+
+  <!-- ── 2025 map (right, offset=350) ───────────────────── -->
+  <!-- Hokkaido -->
+  <polygon points="618.4,19.5 614.6,35.0 612.9,58.7 601.8,77.0 593.1,82.4 590.6,94.5 597.2,112.0 605.6,108.1 617.6,95.2 641.5,108.1 661.2,82.2 682.6,73.5 675.9,49.1 659.5,56.5 641.8,48.4 618.4,19.5" fill="#c8dba8" stroke="#90b070" stroke-width="0.7"/>
+  <!-- Honshu -->
+  <polygon points="590.3,124.8 597.2,135.4 607.1,128.5 610.1,117.4 610.6,143.1 618.9,164.5 617.3,173.7 607.1,194.4 602.1,198.3 601.1,209.7 604.9,228.4 597.0,241.5 599.5,261.5 583.2,272.8 577.6,267.4 567.7,276.5 563.6,288.9 552.7,288.9 544.1,286.2 531.5,289.4 527.6,285.7 529.4,297.0 516.9,301.9 509.1,317.7 502.6,310.3 498.9,298.0 504.7,287.6 495.5,287.6 490.4,283.2 477.0,287.1 464.1,293.8 450.9,293.8 446.8,300.0 424.8,304.9 432.4,293.6 440.1,287.1 444.2,281.5 461.5,267.4 482.3,266.7 492.7,265.7 501.7,267.4 514.6,263.0 536.5,216.6 524.6,237.1 534.9,237.1 547.1,227.2 567.4,207.0 581.3,182.8 586.1,162.6 584.6,150.5 597.2,135.4 590.3,124.8" fill="#c8dba8" stroke="#90b070" stroke-width="0.7"/>
+  <!-- Shikoku -->
+  <polygon points="488.8,301.0 489.4,307.9 481.2,314.8 469.9,335.0 453.7,335.0 455.3,317.7 452.6,312.8 455.8,307.9 455.8,305.9 460.2,301.9 464.1,297.5 469.9,295.5 488.8,301.0" fill="#c8dba8" stroke="#90b070" stroke-width="0.7"/>
+  <!-- Kyushu -->
+  <polygon points="424.8,304.9 422.3,306.6 415.1,312.8 402.4,323.4 401.1,332.8 411.5,351.3 411.5,362.9 418.6,372.0 426.7,365.3 433.2,355.0 436.1,342.6 441.2,329.1 436.4,318.0 432.9,315.5 420.5,307.4 424.8,304.9" fill="#c8dba8" stroke="#90b070" stroke-width="0.7"/>
+
+  <!-- region labels (right) -->
+  <text x="619" y="57"  text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Hokkaidō</text>
+  <text x="602" y="162" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Tōhoku</text>
+  <text x="577" y="254" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Kantō</text>
+  <text x="533" y="268" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Chūbu</text>
+  <text x="498" y="284" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Kansai</text>
+  <text x="462" y="292" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Chūgoku</text>
+  <text x="422" y="344" text-anchor="middle" font-size="8" fill="#4a6030" font-style="italic">Kyūshū</text>
+
+  <!-- 2025 station circles -->
+  <circle cx="570.0" cy="246.4" r="15.6" fill="#c00000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <text x="588" y="244" font-size="7.5" fill="#600">Isesaki 41.8★</text>
+  <circle cx="572.1" cy="254.3" r="12.8" fill="#d83000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="572.3" cy="244.2" r="11.4" fill="#d83000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="496.8" cy="277.3" r="11.4" fill="#d83000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <text x="480" y="270" font-size="7.5" fill="#600" text-anchor="end">Kaibara 41.2</text>
+  <circle cx="567.5" cy="244.7" r="10.0" fill="#d83000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="573.4" cy="250.6" r="7.9" fill="#e86000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="579.2" cy="249.9" r="7.2" fill="#e86000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="498.2" cy="271.6" r="7.2" fill="#e86000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="555.9" cy="279.7" r="12.8" fill="#d83000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <text x="554" y="297" font-size="7.5" fill="#600" text-anchor="middle">Shizuoka 41.4</text>
+  <circle cx="570.7" cy="259.5" r="5.8" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="571.9" cy="262.5" r="5.1" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="521.5" cy="242.7" r="5.1" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="476.1" cy="276.0" r="5.1" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="567.9" cy="254.6" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="574.8" cy="259.3" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="574.9" cy="262.5" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="495.7" cy="279.2" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="471.5" cy="283.9" r="5.8" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="448.8" cy="288.9" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="525.7" cy="277.3" r="6.5" fill="#e86000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="530.5" cy="274.8" r="3.0" fill="#f0c040" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="576.0" cy="248.4" r="4.4" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="576.7" cy="224.7" r="4.4" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="564.7" cy="244.5" r="6.5" fill="#e86000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+  <circle cx="544.1" cy="286.2" r="4.4" fill="#f09000" fill-opacity="0.85" stroke="white" stroke-width="0.8"/>
+
+  <!-- legend -->
+  <text x="20" y="408" font-size="9" fill="currentColor">Temperature (°C):</text>
+  <circle cx="118" cy="404" r="4.5" fill="#f0c040" stroke="white" stroke-width="0.5"/>
+  <text x="125" y="407" font-size="8.5" fill="currentColor">40.0–40.1</text>
+  <circle cx="195" cy="404" r="4.5" fill="#f09000" stroke="white" stroke-width="0.5"/>
+  <text x="202" y="407" font-size="8.5" fill="currentColor">40.2–40.4</text>
+  <circle cx="272" cy="404" r="4.5" fill="#e86000" stroke="white" stroke-width="0.5"/>
+  <text x="279" y="407" font-size="8.5" fill="currentColor">40.5–40.9</text>
+  <circle cx="349" cy="404" r="4.5" fill="#d83000" stroke="white" stroke-width="0.5"/>
+  <text x="356" y="407" font-size="8.5" fill="currentColor">41.0–41.4</text>
+  <circle cx="426" cy="404" r="4.5" fill="#c00000" stroke="white" stroke-width="0.5"/>
+  <text x="433" y="407" font-size="8.5" fill="currentColor">≥ 41.5</text>
+  <text x="345" y="430" text-anchor="middle" font-size="8.5" fill="#888">Source: JMA · circle size ∝ excess above 40°C</text>
+
+</svg>
+
+The contrast is stark. In 2024 the events are tightly clustered in the northern Kantō plain. In 2025 they spread west into Kansai (Kaibara, Fukuchiyama) and Chūgoku (Kuse, Takahashi, Kake), and the Kantō cluster itself grows far denser and hotter — culminating in the deep-red 41.8°C circle at Isesaki.
+
 ## Why these two years matter
 
 The proximate causes are familiar: a strengthened Pacific High, reduced cloud cover, urban heat island effects amplifying record sea-surface temperatures. The structural cause is also familiar: background warming has shifted Japan's entire summer temperature distribution roughly 1.5°C above the 1990 baseline.
