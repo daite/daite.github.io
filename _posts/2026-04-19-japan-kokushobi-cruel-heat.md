@@ -341,6 +341,20 @@ The maps below show every station that crossed 40°C in each summer. Circle size
 
 The contrast is stark. In 2024 the events are tightly clustered in the northern Kantō plain. In 2025 they spread west into Kansai (Kaibara, Fukuchiyama) and Chūgoku (Kuse, Takahashi, Kake), and the Kantō cluster itself grows far denser and hotter — culminating in the deep-red 41.8°C circle at Isesaki.
 
+### Temperature field — peak days
+
+The maps below use `scipy.interpolate.griddata` (linear method) to estimate temperatures across Japan's entire land area from the same station data, giving a continuous gradient rather than discrete circles. Prefecture boundaries are drawn from the [dataofjapan/land](https://github.com/dataofjapan/land) GeoJSON in WGS84 / EPSG:4326 — the standard projection for Japan web maps.
+
+**29 July 2024** — Sano (Tochigi) 41.0°C, the summer's hottest day:
+
+![Japan temperature heatmap — 29 July 2024](/assets/img/posts/japan-heatmap-2024-jul29.png)
+
+**5 August 2025** — Isesaki (Gunma) 41.8°C, Japan's all-time record:
+
+![Japan temperature heatmap — 5 August 2025](/assets/img/posts/japan-heatmap-2025-aug05.png)
+
+The gradient makes plain what the circle map implies: on both days the heat is not a metropolitan phenomenon but a feature of the **inland Kantō basin** — hemmed between the mountains of Nikkō to the north and the Ōu range to the west, channelling hot, dry air onto the flat lowlands of Saitama and Gunma.
+
 ## Why these two years matter
 
 The proximate causes are familiar: a strengthened Pacific High, reduced cloud cover, urban heat island effects amplifying record sea-surface temperatures. The structural cause is also familiar: background warming has shifted Japan's entire summer temperature distribution roughly 1.5°C above the 1990 baseline.
