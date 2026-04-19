@@ -37,100 +37,70 @@ The JMA says the new designation will "effectively call for vigilance" — signa
 
 In 2024, Japan recorded nine days on which at least one observing station reported temperatures at or above 40°C. That is an unprecedented count in the JMA's 150-year measurement history. Tokyo's Nerima district hit 40.0°C. Kofu, already notorious for heat, topped 40°C multiple times. Niigata — a city on the Sea of Japan coast not historically associated with extreme heat — crossed the threshold twice in July.
 
-The chart below shows the peak daily maximum temperatures recorded at major JMA stations across the 2024 summer season.
+The chart below plots every daily maximum temperature recorded at Tokyo, Osaka, and Kofu (甲府) from 1 June to 30 September 2024, sourced directly from JMA observation data.
 
-<svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:700px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
 
   <!-- title -->
-  <text x="350" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Japan Peak Monthly Temperature — Summer 2024</text>
+  <text x="397" y="24" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Daily Maximum Temperature — Japan Summer 2024 (JMA)</text>
 
   <!-- y-axis label -->
-  <text x="12" y="175" text-anchor="middle" font-size="11" fill="currentColor" transform="rotate(-90,12,175)">Temperature (°C)</text>
+  <text x="12" y="185" text-anchor="middle" font-size="11" fill="currentColor" transform="rotate(-90,12,185)">Temperature (°C)</text>
 
-  <!-- gridlines + y-axis ticks: range 26–42, step 2, scale 260px / 16° = 16.25px/° -->
-  <!-- y=300 → 26°C   y=40 → 42°C -->
-  <line x1="60" y1="300" x2="660" y2="300" stroke="#ccc" stroke-width="0.5"/>
-  <text x="52" y="304" text-anchor="end" fill="currentColor">26</text>
+  <!-- gridlines: 25, 30, 35 -->
+  <line x1="55" y1="256" x2="740" y2="256" stroke="#ccc" stroke-width="0.5"/>
+  <text x="48" y="260" text-anchor="end" fill="currentColor">25</text>
 
-  <line x1="60" y1="268" x2="660" y2="268" stroke="#ccc" stroke-width="0.5"/>
-  <text x="52" y="272" text-anchor="end" fill="currentColor">28</text>
+  <line x1="55" y1="193" x2="740" y2="193" stroke="#ccc" stroke-width="0.5"/>
+  <text x="48" y="197" text-anchor="end" fill="currentColor">30</text>
 
-  <line x1="60" y1="235" x2="660" y2="235" stroke="#ccc" stroke-width="0.5"/>
-  <text x="52" y="239" text-anchor="end" fill="currentColor">30</text>
+  <line x1="55" y1="129" x2="740" y2="129" stroke="#ccc" stroke-width="0.5"/>
+  <text x="48" y="133" text-anchor="end" fill="currentColor">35</text>
 
-  <line x1="60" y1="203" x2="660" y2="203" stroke="#ccc" stroke-width="0.5"/>
-  <text x="52" y="207" text-anchor="end" fill="currentColor">32</text>
+  <!-- 40°C threshold (dashed red) -->
+  <line x1="55" y1="66" x2="740" y2="66" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="48" y="70" text-anchor="end" fill="#cc0000" font-weight="600">40</text>
 
-  <line x1="60" y1="170" x2="660" y2="170" stroke="#ccc" stroke-width="0.5"/>
-  <text x="52" y="174" text-anchor="end" fill="currentColor">34</text>
+  <!-- month divider lines -->
+  <line x1="225" y1="40" x2="225" y2="320" stroke="#aaa" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <line x1="400" y1="40" x2="400" y2="320" stroke="#aaa" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <line x1="576" y1="40" x2="576" y2="320" stroke="#aaa" stroke-width="0.5" stroke-dasharray="3 3"/>
 
-  <line x1="60" y1="138" x2="660" y2="138" stroke="#ccc" stroke-width="0.5"/>
-  <text x="52" y="142" text-anchor="end" fill="currentColor">36</text>
+  <!-- axes -->
+  <line x1="55" y1="40" x2="55" y2="320" stroke="currentColor" stroke-width="1"/>
+  <line x1="55" y1="320" x2="740" y2="320" stroke="currentColor" stroke-width="1"/>
 
-  <line x1="60" y1="105" x2="660" y2="105" stroke="#ccc" stroke-width="0.5"/>
-  <text x="52" y="109" text-anchor="end" fill="currentColor">38</text>
+  <!-- x-axis month labels -->
+  <text x="140" y="336" text-anchor="middle" fill="currentColor">June</text>
+  <text x="312" y="336" text-anchor="middle" fill="currentColor">July</text>
+  <text x="488" y="336" text-anchor="middle" fill="currentColor">August</text>
+  <text x="658" y="336" text-anchor="middle" fill="currentColor">September</text>
+  <text x="397" y="352" text-anchor="middle" font-size="10" fill="currentColor">2024 — source: Japan Meteorological Agency</text>
 
-  <!-- 40°C threshold line (dashed red) -->
-  <line x1="60" y1="73" x2="660" y2="73" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <text x="52" y="77" text-anchor="end" fill="#cc0000" font-weight="600">40</text>
+  <!-- Tokyo (station 47662) -->
+  <polyline points="55.0,239.8 60.7,261.5 66.3,265.3 72.0,250.0 77.6,225.8 83.3,230.9 89.0,234.7 94.6,215.6 100.3,247.5 106.0,260.2 111.6,205.5 117.3,191.5 122.9,251.3 128.6,171.1 134.3,194.0 139.9,209.3 145.6,186.4 151.2,288.2 156.9,199.1 162.6,213.1 168.2,278.0 173.9,192.7 179.5,266.5 185.2,149.5 190.9,169.8 196.5,174.9 202.2,195.3 207.9,271.6 213.5,205.5 219.2,205.5 224.8,200.4 230.5,174.9 236.2,150.7 241.8,129.1 247.5,122.7 253.1,139.3 258.8,136.7 264.5,116.4 270.1,135.5 275.8,145.6 281.4,197.8 287.1,232.2 292.8,176.2 298.4,208.0 304.1,222.0 309.8,227.1 315.4,176.2 321.1,149.5 326.7,135.5 332.4,118.9 338.1,134.2 343.7,108.7 349.4,135.5 355.0,116.4 360.7,131.6 366.4,121.5 372.0,121.5 377.7,106.2 383.3,99.8 389.0,115.1 394.7,121.5 400.3,148.2 406.0,143.1 411.7,134.2 417.3,125.3 423.0,129.1 428.6,148.2 434.3,134.2 440.0,143.1 445.6,125.3 451.3,130.4 456.9,117.6 462.6,122.7 468.3,130.4 473.9,132.9 479.6,120.2 485.2,204.2 490.9,117.6 496.6,141.8 502.2,135.5 507.9,132.9 513.6,146.9 519.2,186.4 524.9,163.5 530.5,136.7 536.2,148.2 541.9,146.9 547.5,173.6 553.2,174.9 558.8,174.9 564.5,223.3 570.2,178.7 575.8,186.4 581.5,140.5 587.1,225.8 592.8,192.7 598.5,169.8 604.1,148.2 609.8,144.4 615.5,146.9 621.1,145.6 626.8,145.6 632.4,139.3 638.1,135.5 643.8,143.1 649.4,135.5 655.1,136.7 660.7,214.4 666.4,149.5 672.1,127.8 677.7,146.9 683.4,143.1 689.0,159.6 694.7,206.7 700.4,222.0 706.0,252.5 711.7,272.9 717.4,204.2 723.0,258.9 728.7,225.8 734.3,256.4 740.0,252.5"
+    fill="none" stroke="#4e79a7" stroke-width="1.5" stroke-linejoin="round" opacity="0.85"/>
 
-  <line x1="60" y1="40" x2="660" y2="40" stroke="#ccc" stroke-width="0.5"/>
-  <text x="52" y="44" text-anchor="end" fill="currentColor">42</text>
+  <!-- Osaka (station 47772) -->
+  <polyline points="55.0,227.1 60.7,238.5 66.3,242.4 72.0,248.7 77.6,210.5 83.3,241.1 89.0,200.4 94.6,191.5 100.3,288.2 106.0,206.7 111.6,192.7 117.3,182.5 122.9,152.0 128.6,140.5 134.3,185.1 139.9,185.1 145.6,216.9 151.2,242.4 156.9,177.5 162.6,205.5 168.2,209.3 173.9,187.6 179.5,225.8 185.2,208.0 190.9,215.6 196.5,200.4 202.2,238.5 207.9,252.5 213.5,194.0 219.2,171.1 224.8,220.7 230.5,211.8 236.2,144.4 241.8,152.0 247.5,124.0 253.1,125.3 258.8,131.6 264.5,127.8 270.1,139.3 275.8,157.1 281.4,224.5 287.1,227.1 292.8,190.2 298.4,204.2 304.1,180.0 309.8,164.7 315.4,138.0 321.1,130.4 326.7,126.5 332.4,136.7 338.1,112.5 343.7,111.3 349.4,121.5 355.0,122.7 360.7,135.5 366.4,120.2 372.0,126.5 377.7,108.7 383.3,120.2 389.0,129.1 394.7,130.4 400.3,99.8 406.0,93.5 411.7,93.5 417.3,87.1 423.0,125.3 428.6,107.5 434.3,117.6 440.0,115.1 445.6,103.6 451.3,131.6 456.9,127.8 462.6,118.9 468.3,96.0 473.9,89.6 479.6,96.0 485.2,145.6 490.9,148.2 496.6,102.4 502.2,177.5 507.9,157.1 513.6,130.4 519.2,117.6 524.9,122.7 530.5,116.4 536.2,117.6 541.9,115.1 547.5,118.9 553.2,150.7 558.8,205.5 564.5,113.8 570.2,209.3 575.8,182.5 581.5,136.7 587.1,180.0 592.8,140.5 598.5,155.8 604.1,136.7 609.8,135.5 615.5,124.0 621.1,115.1 626.8,124.0 632.4,125.3 638.1,118.9 643.8,144.4 649.4,131.6 655.1,146.9 660.7,122.7 666.4,135.5 672.1,141.8 677.7,141.8 683.4,132.9 689.0,138.0 694.7,196.5 700.4,208.0 706.0,185.1 711.7,186.4 717.4,163.5 723.0,185.1 728.7,197.8 734.3,229.6 740.0,185.1"
+    fill="none" stroke="#f28e2b" stroke-width="1.5" stroke-linejoin="round" opacity="0.85"/>
 
-  <!-- axes border -->
-  <line x1="60" y1="40" x2="60" y2="300" stroke="currentColor" stroke-width="1"/>
-  <line x1="60" y1="300" x2="660" y2="300" stroke="currentColor" stroke-width="1"/>
-
-  <!-- x-axis labels: Jun x=60, Jul x=260, Aug x=460, Sep x=660 -->
-  <text x="60"  y="318" text-anchor="middle" fill="currentColor">Jun</text>
-  <text x="260" y="318" text-anchor="middle" fill="currentColor">Jul</text>
-  <text x="460" y="318" text-anchor="middle" fill="currentColor">Aug</text>
-  <text x="660" y="318" text-anchor="middle" fill="currentColor">Sep</text>
-  <text x="360" y="336" text-anchor="middle" font-size="11" fill="currentColor">2024</text>
-
-  <!-- Tokyo (Nerima): peak monthly max 35, 39, 40, 33 -->
-  <!-- y = 300 - (t-26)*16.25 -->
-  <!-- 35→154  39→89  40→73  33→186 -->
-  <polyline points="60,154 260,89 460,73 660,186"
-    fill="none" stroke="#4e79a7" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="60"  cy="154" r="4" fill="#4e79a7"/>
-  <circle cx="260" cy="89"  r="4" fill="#4e79a7"/>
-  <circle cx="460" cy="73"  r="4" fill="#4e79a7"/>
-  <circle cx="660" cy="186" r="4" fill="#4e79a7"/>
-
-  <!-- Osaka: peak monthly max 36, 40, 39, 32 -->
-  <!-- 36→138  40→73  39→89  32→203 -->
-  <polyline points="60,138 260,73 460,89 660,203"
-    fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="60"  cy="138" r="4" fill="#f28e2b"/>
-  <circle cx="260" cy="73"  r="4" fill="#f28e2b"/>
-  <circle cx="460" cy="89"  r="4" fill="#f28e2b"/>
-  <circle cx="660" cy="203" r="4" fill="#f28e2b"/>
-
-  <!-- Kofu (Yamanashi): peak monthly max 37, 40, 40, 34 -->
-  <!-- 37→121  40→73  40→73  34→170 -->
-  <polyline points="60,121 260,73 460,73 660,170"
-    fill="none" stroke="#e15759" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="60"  cy="121" r="4" fill="#e15759"/>
-  <circle cx="260" cy="73"  r="4" fill="#e15759"/>
-  <circle cx="460" cy="73"  r="4" fill="#e15759"/>
-  <circle cx="660" cy="170" r="4" fill="#e15759"/>
+  <!-- Kofu / 甲府 (station 47638) -->
+  <polyline points="55.0,225.8 60.7,276.7 66.3,251.3 72.0,236.0 77.6,205.5 83.3,223.3 89.0,213.1 94.6,197.8 100.3,248.7 106.0,208.0 111.6,180.0 117.3,164.7 122.9,192.7 128.6,146.9 134.3,159.6 139.9,197.8 145.6,186.4 151.2,320.0 156.9,174.9 162.6,210.5 168.2,299.6 173.9,211.8 179.5,286.9 185.2,164.7 190.9,152.0 196.5,152.0 202.2,196.5 207.9,285.6 213.5,186.4 219.2,239.8 224.8,216.9 230.5,177.5 236.2,132.9 241.8,104.9 247.5,107.5 253.1,154.5 258.8,74.4 264.5,177.5 270.1,232.2 275.8,194.0 281.4,218.2 287.1,272.9 292.8,181.3 298.4,194.0 304.1,182.5 309.8,238.5 315.4,158.4 321.1,122.7 326.7,145.6 332.4,102.4 338.1,108.7 343.7,73.1 349.4,88.4 355.0,146.9 360.7,107.5 366.4,104.9 372.0,89.6 377.7,99.8 383.3,75.6 389.0,98.5 394.7,107.5 400.3,102.4 406.0,96.0 411.7,93.5 417.3,90.9 423.0,102.4 428.6,108.7 434.3,118.9 440.0,113.8 445.6,110.0 451.3,111.3 456.9,96.0 462.6,102.4 468.3,96.0 473.9,124.0 479.6,125.3 485.2,176.2 490.9,89.6 496.6,107.5 502.2,113.8 507.9,124.0 513.6,116.4 519.2,143.1 524.9,120.2 530.5,112.5 536.2,159.6 541.9,130.4 547.5,225.8 553.2,248.7 558.8,236.0 564.5,200.4 570.2,172.4 575.8,186.4 581.5,135.5 587.1,162.2 592.8,153.3 598.5,145.6 604.1,127.8 609.8,130.4 615.5,126.5 621.1,134.2 626.8,129.1 632.4,125.3 638.1,124.0 643.8,145.6 649.4,134.2 655.1,143.1 660.7,143.1 666.4,143.1 672.1,117.6 677.7,144.4 683.4,118.9 689.0,186.4 694.7,204.2 700.4,191.5 706.0,242.4 711.7,262.7 717.4,174.9 723.0,210.5 728.7,206.7 734.3,252.5 740.0,200.4"
+    fill="none" stroke="#e15759" stroke-width="1.5" stroke-linejoin="round" opacity="0.85"/>
 
   <!-- legend -->
-  <line x1="100" y1="348" x2="122" y2="348" stroke="#4e79a7" stroke-width="2.5"/>
-  <circle cx="111" cy="348" r="3.5" fill="#4e79a7"/>
-  <text x="126" y="352" fill="currentColor">Tokyo (Nerima)</text>
+  <line x1="90"  y1="375" x2="110" y2="375" stroke="#4e79a7" stroke-width="2"/>
+  <text x="114" y="379" fill="currentColor">Tokyo (47662)</text>
 
-  <line x1="260" y1="348" x2="282" y2="348" stroke="#f28e2b" stroke-width="2.5"/>
-  <circle cx="271" cy="348" r="3.5" fill="#f28e2b"/>
-  <text x="286" y="352" fill="currentColor">Osaka</text>
+  <line x1="242" y1="375" x2="262" y2="375" stroke="#f28e2b" stroke-width="2"/>
+  <text x="266" y="379" fill="currentColor">Osaka (47772)</text>
 
-  <line x1="370" y1="348" x2="392" y2="348" stroke="#e15759" stroke-width="2.5"/>
-  <circle cx="381" cy="348" r="3.5" fill="#e15759"/>
-  <text x="396" y="352" fill="currentColor">Kofu (Yamanashi)</text>
+  <line x1="400" y1="375" x2="420" y2="375" stroke="#e15759" stroke-width="2"/>
+  <text x="424" y="379" fill="currentColor">Kofu / 甲府 (47638)</text>
 
-  <line x1="522" y1="348" x2="544" y2="348" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <text x="548" y="352" fill="#cc0000">酷暑日 (40°C)</text>
+  <line x1="578" y1="375" x2="598" y2="375" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="602" y="379" fill="#cc0000">酷暑日 threshold</text>
 
 </svg>
 
