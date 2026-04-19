@@ -9,6 +9,13 @@ Japan has a word for almost every gradation of summer heat. There is *natsubi* (
 
 After the summer of 2024 — Japan's hottest on record — the Japan Meteorological Agency (JMA) ran an online public survey to name something the existing vocabulary could not adequately describe: a day when the temperature reaches or exceeds **40°C**. The winner, chosen from thousands of submissions, was **酷暑日** (*kokushobi*).
 
+<audio controls preload="none" style="width:100%;max-width:720px;display:block;margin:1.5rem 0;">
+  <source src="/assets/audio/kokushobi-jma-announcement.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+[Download the MP3](/assets/audio/kokushobi-jma-announcement.mp3)
+
 ## What the word means
 
 Break the kanji apart and you get the full force of it:
