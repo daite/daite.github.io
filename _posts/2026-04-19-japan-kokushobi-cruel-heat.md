@@ -506,9 +506,24 @@ The island polygon coordinates are computed the same way — a list of `(lat, lo
 
 ## References
 
+**News & announcements**
+
 - NHK Web News — [酷暑日とは？ 気象庁が新しい用語を制定](https://news.web.nhk/newsweb/na/na-k10015101371000) (April 2026)
-- Japan Meteorological Agency — [2024年夏 40°C以上を観測した地点一覧](https://www.data.jma.go.jp/stats/stat/202415/amd_mxtem_ov40_202415.html)
-- Japan Meteorological Agency — [2025年夏 40°C以上を観測した地点一覧](https://www.data.jma.go.jp/stats/stat/202515/amd_mxtem_ov40_202515.html)
-- Japan Meteorological Agency — [過去の気象データ検索 (ETRN)](https://www.data.jma.go.jp/stats/etrn/index.php) — daily station data for Tokyo (47662), Osaka (47772), Kofu (47638)
 - The Japan Times — [JMA introduces new name for days of 40°C heat](https://www.japantimes.co.jp/news/2026/04/17/japan/japan-severely-hot-day/) (April 17, 2026)
 - Nippon.com — [Japan's Highest Temperatures: New Record of 41.8°C Set in August 2025](https://www.nippon.com/en/japan-data/h02498/)
+
+**JMA — stations above 40°C**
+
+- [2024年夏 40°C以上を観測した地点一覧](https://www.data.jma.go.jp/stats/stat/202415/amd_mxtem_ov40_202415.html)
+- [2025年夏 40°C以上を観測した地点一覧](https://www.data.jma.go.jp/stats/stat/202515/amd_mxtem_ov40_202515.html)
+
+**JMA ETRN — daily temperature data (main stations, `daily_s1`)**
+
+- [Tokyo — 東京 (prec\_no=44, block\_no=47662)](https://www.data.jma.go.jp/stats/etrn/view/daily_s1.php?prec_no=44&block_no=47662&year=2024&month=7&day=&view=)
+- [Osaka — 大阪 (prec\_no=62, block\_no=47772)](https://www.data.jma.go.jp/stats/etrn/view/daily_s1.php?prec_no=62&block_no=47772&year=2024&month=7&day=&view=)
+- [Kofu — 甲府 (prec\_no=49, block\_no=47638)](https://www.data.jma.go.jp/stats/etrn/view/daily_s1.php?prec_no=49&block_no=47638&year=2024&month=7&day=&view=)
+
+**JMA ETRN — daily temperature data (AMeDAS stations, `daily_a1`)**
+
+- [Sano — 佐野, Tochigi (prec\_no=41, block\_no=1018)](https://www.data.jma.go.jp/stats/etrn/view/daily_a1.php?prec_no=41&block_no=1018&year=2024&month=7&day=&view=a1) — 2024 peak: 41.0°C on Jul 29
+- [Isesaki — 伊勢崎, Gunma (prec\_no=42, block\_no=1021)](https://www.data.jma.go.jp/stats/etrn/view/daily_a1.php?prec_no=42&block_no=1021&year=2025&month=8&day=&view=a1) — 2025 national record: 41.8°C on Aug 5
