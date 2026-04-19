@@ -5,7 +5,7 @@ categories: [Climate, Japan]
 tags: [japan, heatwave, climate, weather]
 ---
 
-Japan has a word for almost every gradation of summer heat. There is *natsuhi* (夏日) — a summer day, when the mercury clears 25°C. Then *manatsuhi* (真夏日), a midsummer day, at 30°C. Then *mōshobi* (猛暑日), a fierce-heat day, at 35°C. For decades that was the top of the scale. It no longer is.
+Japan has a word for almost every gradation of summer heat. There is *natsubi* (夏日) — a summer day, when the mercury clears 25°C. Then *manatsubi* (真夏日), a midsummer day, at 30°C. Then *mōshobi* (猛暑日), a fierce-heat day, at 35°C. For decades that was the top of the scale. It no longer is.
 
 After the summer of 2024 — Japan's hottest on record — the Japan Meteorological Agency (JMA) ran an online public survey to name something the existing vocabulary could not adequately describe: a day when the temperature reaches or exceeds **40°C**. The winner, chosen from thousands of submissions, was **酷暑日** (*kokushobi*).
 
@@ -25,8 +25,8 @@ The naming follows a long Japanese tradition of giving precise meteorological vo
 
 | Term | Kanji | Threshold | English gloss |
 |------|-------|-----------|---------------|
-| Natsuhi | 夏日 | ≥ 25°C | Summer day |
-| Manatsuhi | 真夏日 | ≥ 30°C | Midsummer day |
+| Natsubi | 夏日 | ≥ 25°C | Summer day |
+| Manatsubi | 真夏日 | ≥ 30°C | Midsummer day |
 | Nettaiya | 熱帯夜 | ≥ 25°C (overnight low) | Tropical night |
 | Mōshobi | 猛暑日 | ≥ 35°C | Fierce-heat day |
 | **Kokushobi** | **酷暑日** | **≥ 40°C** | **Cruelly hot day** |
