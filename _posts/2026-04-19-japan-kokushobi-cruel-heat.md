@@ -14,7 +14,7 @@ After the summer of 2024 — Japan's hottest on record — the Japan Meteorologi
   Your browser does not support the audio element.
 </audio>
 
-[Download the MP3](/assets/audio/kokushobi-jma-announcement.mp3)
+[Download the MP3](/assets/audio/kokushobi-jma-announcement.mp3) | [Download the VTT subtitles](/assets/audio/kokushobi-jma-announcement.vtt)
 
 ## What the word means
 
