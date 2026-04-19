@@ -122,6 +122,9 @@ The dashed red line marks the kokushobi threshold. At these three stations the l
 
 2025 was dramatically worse. The JMA recorded **30 instances** at **25 stations** where temperatures reached 40°C or above — more than three times the 2024 count. On 5 August alone, twelve stations crossed 40°C in a single day. That same day, Isesaki (伊勢崎) in Gunma Prefecture hit **41.8°C**, breaking Japan's all-time temperature record.
 
+<details>
+<summary>Show all 30 observations ▸</summary>
+
 | Date | Station | Prefecture | °C |
 |------|---------|-----------|-----|
 | Jul 30 | Kaibara (丹波市) | Hyogo | 41.2 |
@@ -154,6 +157,8 @@ The dashed red line marks the kokushobi threshold. At these three stations the l
 | Aug 30 | Hamamatsu | Shizuoka | 40.2 |
 | Aug 30 | Kuwana | Mie | 40.5 |
 | Aug 31 | Nagoya | Aichi | 40.0 |
+
+</details>
 
 The chart below covers the same June–September window with the same three stations. Peak readings at these locations: Tokyo 38.5°C (30 August), Osaka 38.7°C (29 July), Kofu 39.6°C (2 August) — all below 40°C, yet the season's overall intensity is visible in the sustained high baseline.
 
