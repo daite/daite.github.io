@@ -35,9 +35,21 @@ The JMA says the new designation will "effectively call for vigilance" — signa
 
 ## The summer that made the word necessary
 
-In 2024, Japan recorded nine days on which at least one observing station reported temperatures at or above 40°C. That is an unprecedented count in the JMA's 150-year measurement history. Tokyo's Nerima district hit 40.0°C. Kofu, already notorious for heat, topped 40°C multiple times. Niigata — a city on the Sea of Japan coast not historically associated with extreme heat — crossed the threshold twice in July.
+In 2024, nine JMA stations recorded at least one day at or above 40°C — the most since records began. The events were concentrated in a single brutal day, 29 July, when six inland Kanto stations crossed the threshold simultaneously. The hottest reading that summer was 41.0°C at Sano (佐野), Tochigi.
 
-The chart below plots every daily maximum temperature recorded at Tokyo, Osaka, and Kofu (甲府) from 1 June to 30 September 2024, sourced directly from JMA observation data.
+| Date | Station | Prefecture | °C |
+|------|---------|-----------|-----|
+| Jul 7 | Shizuoka | Shizuoka | 40.0 |
+| **Jul 29** | **Sano** | **Tochigi** | **41.0** |
+| Jul 29 | Tatebayashi | Gunma | 40.2 |
+| Jul 29 | Isesaki | Gunma | 40.1 |
+| Jul 29 | Kumagaya | Saitama | 40.0 |
+| Jul 29 | Koga | Ibaraki | 40.0 |
+| Jul 29 | Tenryu | Shizuoka | 40.2 |
+| Aug 9 | Kuwana | Mie | 40.4 |
+| Aug 16 | Mino | Gifu | 40.0 |
+
+The chart below plots every daily maximum at Tokyo, Osaka, and Kofu (甲府) — three large, well-known stations — to show the season's shape. Note that none of these three crossed 40°C; the kokushobi events happened at smaller inland stations further from the coast.
 
 <svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
 
@@ -104,11 +116,46 @@ The chart below plots every daily maximum temperature recorded at Tokyo, Osaka, 
 
 </svg>
 
-The dashed red line marks the kokushobi threshold. At these three stations the line was never crossed — Kofu came closest with a peak of 39.4°C on 22 July — but nationally the JMA counted nine station-days above 40°C, concentrated at inland basins in Niigata and Saitama prefectures.
+The dashed red line marks the kokushobi threshold. At these three stations the line was never crossed in 2024 — Kofu came closest at 39.4°C on 22 July.
 
-## 2025: The bar rises further
+## 2025: Three times as many crossings, a new national record
 
-2025 brought no relief. The chart below covers the same June–September window with the same three stations. Peak readings: Tokyo 38.5°C (30 August), Osaka 38.7°C (29 July), Kofu 39.6°C (2 August).
+2025 was dramatically worse. The JMA recorded **30 instances** at **25 stations** where temperatures reached 40°C or above — more than three times the 2024 count. On 5 August alone, twelve stations crossed 40°C in a single day. That same day, Isesaki (伊勢崎) in Gunma Prefecture hit **41.8°C**, breaking Japan's all-time temperature record.
+
+| Date | Station | Prefecture | °C |
+|------|---------|-----------|-----|
+| Jul 30 | Kaibara (丹波市) | Hyogo | 41.2 |
+| Jul 30 | Fukuchiyama | Kyoto | 40.6 |
+| Jul 30 | Kuse | Okayama | 40.3 |
+| Jul 30 | Nishi-Waki | Hyogo | 40.0 |
+| Jul 31 | Takahashi | Okayama | 40.4 |
+| Aug 1 | Kuwana | Mie | 40.4 |
+| Aug 2 | Isesaki | Gunma | 40.1 |
+| Aug 2 | Maebashi | Gunma | 40.0 |
+| Aug 2 | Kake | Hiroshima | 40.0 |
+| Aug 4 | Komatsu | Ishikawa | 40.3 |
+| **Aug 5** | **Isesaki** | **Gunma** | **41.8 ★ national record** |
+| Aug 5 | Hatoyama | Saitama | 41.4 |
+| Aug 5 | Kiryu | Gunma | 41.2 |
+| Aug 5 | Maebashi | Gunma | 41.0 |
+| Aug 5 | Kumagaya | Saitama | 40.7 |
+| Aug 5 | Koga | Ibaraki | 40.6 |
+| Aug 5 | Kamisatomi | Gunma | 40.5 |
+| Aug 5 | Ome | Tokyo | 40.4 |
+| Aug 5 | Sano | Tochigi | 40.2 |
+| Aug 5 | Tatebayashi | Gunma | 40.2 |
+| Aug 5 | Hachioji | Tokyo | 40.3 |
+| Aug 5 | Chichibu | Saitama | 40.0 |
+| Aug 5 | Tokorozawa | Saitama | 40.0 |
+| Aug 5 | Fuchu | Tokyo | 40.0 |
+| Aug 6 | Shizuoka | Shizuoka | 41.4 |
+| Aug 30 | Hatoyama | Saitama | 40.3 |
+| Aug 30 | Kumagaya | Saitama | 40.2 |
+| Aug 30 | Hamamatsu | Shizuoka | 40.2 |
+| Aug 30 | Kuwana | Mie | 40.5 |
+| Aug 31 | Nagoya | Aichi | 40.0 |
+
+The chart below covers the same June–September window with the same three stations. Peak readings at these locations: Tokyo 38.5°C (30 August), Osaka 38.7°C (29 July), Kofu 39.6°C (2 August) — all below 40°C, yet the season's overall intensity is visible in the sustained high baseline.
 
 <svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
 
@@ -163,13 +210,13 @@ The dashed red line marks the kokushobi threshold. At these three stations the l
 
 </svg>
 
-In 2025 Kofu reached 39.6°C — 0.4°C short of the kokushobi line, but the floor of the distribution shifted noticeably upward compared to 2024. Where 2024 saw long cool spells break the heat, 2025 showed fewer of those breaks: the 35°C gridline was crossed and re-crossed almost continuously from late June through early September.
+At the three charted stations Kofu reached 39.6°C in 2025 — 0.4°C short of the threshold. But the station-level picture understates what was happening nationally: 30 kokushobi-level events versus 9 in 2024, spread across more prefectures and reaching further west (Kyoto, Hyogo, Hiroshima, Aichi) than 2024's largely Kanto-Tokai pattern.
 
-## Why these years matter
+## Why these two years matter
 
 The proximate causes are familiar: a strengthened Pacific High, reduced cloud cover, urban heat island effects amplifying record sea-surface temperatures. The structural cause is also familiar: background warming has shifted Japan's entire summer temperature distribution roughly 1.5°C above the 1990 baseline.
 
-What the two charts together show is not just high peaks but a rising floor. Days that would once have been considered anomalously hot now represent the ordinary middle of summer. The kokushobi category was created to name the extreme. The more revealing story is how far the entire distribution has moved.
+What the data across both years shows is not just record peaks but an accelerating count. Nine events in 2024 was already unprecedented. Thirty events in 2025 — including a new national record — suggests the distribution has shifted enough that kokushobi days are no longer rare anomalies. The JMA coined the term expecting it would be needed. It was needed immediately.
 
 ## A name is a policy instrument
 
