@@ -364,7 +364,7 @@ class MaxTempParser(HTMLParser):
         self._col = 0
         self._row = []
         self.rows = []         # list of (day, max_temp)
-        self._target_col = 4  # 0-indexed column for 最高気温
+        self._target_col = 7  # 0-indexed: 日|現地気圧|海面気圧|降水合計|降水最大1h|降水最大10m|気温平均|気温最高
 
     def handle_starttag(self, tag, attrs):
         if tag == "tr":
