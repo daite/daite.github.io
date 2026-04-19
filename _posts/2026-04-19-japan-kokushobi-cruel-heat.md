@@ -39,104 +39,100 @@ In 2024, Japan recorded nine days on which at least one observing station report
 
 The chart below shows the peak daily maximum temperatures recorded at major JMA stations across the 2024 summer season.
 
-<div style="max-width: 760px; margin: 2rem auto;">
-<canvas id="heatChart" style="width:100%; height:400px;"></canvas>
-</div>
+<svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:700px;display:block;margin:2rem auto;font-family:sans-serif;font-size:11px;">
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<script>
-(function() {
-  var ctx = document.getElementById('heatChart');
-  if (!ctx) return;
+  <!-- title -->
+  <text x="350" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Japan Peak Monthly Temperature — Summer 2024</text>
 
-  var labels = [
-    'Jun 1','Jun 8','Jun 15','Jun 22','Jun 29',
-    'Jul 6','Jul 13','Jul 20','Jul 27',
-    'Aug 3','Aug 10','Aug 17','Aug 24','Aug 31',
-    'Sep 7','Sep 14'
-  ];
+  <!-- y-axis label -->
+  <text x="12" y="175" text-anchor="middle" font-size="11" fill="currentColor" transform="rotate(-90,12,175)">Temperature (°C)</text>
 
-  // Peak daily max across major stations (°C) — weekly snapshots, 2024
-  var tokyo = [29,31,33,35,34, 37,38,36,39, 38,37,40,36,35, 33,31];
-  var osaka = [30,32,34,36,35, 38,39,37,40, 39,38,38,36,34, 32,30];
-  var kofu  = [31,33,35,37,36, 39,40,40,40, 40,40,39,37,35, 34,31];
-  var threshold = Array(labels.length).fill(40);
+  <!-- gridlines + y-axis ticks: range 26–42, step 2, scale 260px / 16° = 16.25px/° -->
+  <!-- y=300 → 26°C   y=40 → 42°C -->
+  <line x1="60" y1="300" x2="660" y2="300" stroke="#ccc" stroke-width="0.5"/>
+  <text x="52" y="304" text-anchor="end" fill="currentColor">26</text>
 
-  new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: labels,
-      datasets: [
-        {
-          label: 'Tokyo (Nerima)',
-          data: tokyo,
-          borderColor: '#4e79a7',
-          backgroundColor: 'rgba(78,121,167,0.08)',
-          tension: 0.3,
-          pointRadius: 3,
-          fill: false
-        },
-        {
-          label: 'Osaka',
-          data: osaka,
-          borderColor: '#f28e2b',
-          backgroundColor: 'rgba(242,142,43,0.08)',
-          tension: 0.3,
-          pointRadius: 3,
-          fill: false
-        },
-        {
-          label: 'Kofu (Yamanashi)',
-          data: kofu,
-          borderColor: '#e15759',
-          backgroundColor: 'rgba(225,87,89,0.08)',
-          tension: 0.3,
-          pointRadius: 3,
-          fill: false
-        },
-        {
-          label: '酷暑日 threshold (40°C)',
-          data: threshold,
-          borderColor: '#cc0000',
-          borderDash: [6, 4],
-          borderWidth: 1.5,
-          pointRadius: 0,
-          fill: false
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { position: 'bottom' },
-        title: {
-          display: true,
-          text: 'Japan Peak Daily Maximum Temperature — Summer 2024',
-          font: { size: 13 }
-        },
-        tooltip: {
-          callbacks: {
-            label: function(ctx) {
-              return ctx.dataset.label + ': ' + ctx.parsed.y + '°C';
-            }
-          }
-        }
-      },
-      scales: {
-        y: {
-          min: 26,
-          max: 42,
-          title: { display: true, text: 'Temperature (°C)' },
-          ticks: { stepSize: 2 }
-        },
-        x: {
-          title: { display: true, text: '2024' }
-        }
-      }
-    }
-  });
-})();
-</script>
+  <line x1="60" y1="268" x2="660" y2="268" stroke="#ccc" stroke-width="0.5"/>
+  <text x="52" y="272" text-anchor="end" fill="currentColor">28</text>
+
+  <line x1="60" y1="235" x2="660" y2="235" stroke="#ccc" stroke-width="0.5"/>
+  <text x="52" y="239" text-anchor="end" fill="currentColor">30</text>
+
+  <line x1="60" y1="203" x2="660" y2="203" stroke="#ccc" stroke-width="0.5"/>
+  <text x="52" y="207" text-anchor="end" fill="currentColor">32</text>
+
+  <line x1="60" y1="170" x2="660" y2="170" stroke="#ccc" stroke-width="0.5"/>
+  <text x="52" y="174" text-anchor="end" fill="currentColor">34</text>
+
+  <line x1="60" y1="138" x2="660" y2="138" stroke="#ccc" stroke-width="0.5"/>
+  <text x="52" y="142" text-anchor="end" fill="currentColor">36</text>
+
+  <line x1="60" y1="105" x2="660" y2="105" stroke="#ccc" stroke-width="0.5"/>
+  <text x="52" y="109" text-anchor="end" fill="currentColor">38</text>
+
+  <!-- 40°C threshold line (dashed red) -->
+  <line x1="60" y1="73" x2="660" y2="73" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="52" y="77" text-anchor="end" fill="#cc0000" font-weight="600">40</text>
+
+  <line x1="60" y1="40" x2="660" y2="40" stroke="#ccc" stroke-width="0.5"/>
+  <text x="52" y="44" text-anchor="end" fill="currentColor">42</text>
+
+  <!-- axes border -->
+  <line x1="60" y1="40" x2="60" y2="300" stroke="currentColor" stroke-width="1"/>
+  <line x1="60" y1="300" x2="660" y2="300" stroke="currentColor" stroke-width="1"/>
+
+  <!-- x-axis labels: Jun x=60, Jul x=260, Aug x=460, Sep x=660 -->
+  <text x="60"  y="318" text-anchor="middle" fill="currentColor">Jun</text>
+  <text x="260" y="318" text-anchor="middle" fill="currentColor">Jul</text>
+  <text x="460" y="318" text-anchor="middle" fill="currentColor">Aug</text>
+  <text x="660" y="318" text-anchor="middle" fill="currentColor">Sep</text>
+  <text x="360" y="336" text-anchor="middle" font-size="11" fill="currentColor">2024</text>
+
+  <!-- Tokyo (Nerima): peak monthly max 35, 39, 40, 33 -->
+  <!-- y = 300 - (t-26)*16.25 -->
+  <!-- 35→154  39→89  40→73  33→186 -->
+  <polyline points="60,154 260,89 460,73 660,186"
+    fill="none" stroke="#4e79a7" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="60"  cy="154" r="4" fill="#4e79a7"/>
+  <circle cx="260" cy="89"  r="4" fill="#4e79a7"/>
+  <circle cx="460" cy="73"  r="4" fill="#4e79a7"/>
+  <circle cx="660" cy="186" r="4" fill="#4e79a7"/>
+
+  <!-- Osaka: peak monthly max 36, 40, 39, 32 -->
+  <!-- 36→138  40→73  39→89  32→203 -->
+  <polyline points="60,138 260,73 460,89 660,203"
+    fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="60"  cy="138" r="4" fill="#f28e2b"/>
+  <circle cx="260" cy="73"  r="4" fill="#f28e2b"/>
+  <circle cx="460" cy="89"  r="4" fill="#f28e2b"/>
+  <circle cx="660" cy="203" r="4" fill="#f28e2b"/>
+
+  <!-- Kofu (Yamanashi): peak monthly max 37, 40, 40, 34 -->
+  <!-- 37→121  40→73  40→73  34→170 -->
+  <polyline points="60,121 260,73 460,73 660,170"
+    fill="none" stroke="#e15759" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="60"  cy="121" r="4" fill="#e15759"/>
+  <circle cx="260" cy="73"  r="4" fill="#e15759"/>
+  <circle cx="460" cy="73"  r="4" fill="#e15759"/>
+  <circle cx="660" cy="170" r="4" fill="#e15759"/>
+
+  <!-- legend -->
+  <line x1="100" y1="348" x2="122" y2="348" stroke="#4e79a7" stroke-width="2.5"/>
+  <circle cx="111" cy="348" r="3.5" fill="#4e79a7"/>
+  <text x="126" y="352" fill="currentColor">Tokyo (Nerima)</text>
+
+  <line x1="260" y1="348" x2="282" y2="348" stroke="#f28e2b" stroke-width="2.5"/>
+  <circle cx="271" cy="348" r="3.5" fill="#f28e2b"/>
+  <text x="286" y="352" fill="currentColor">Osaka</text>
+
+  <line x1="370" y1="348" x2="392" y2="348" stroke="#e15759" stroke-width="2.5"/>
+  <circle cx="381" cy="348" r="3.5" fill="#e15759"/>
+  <text x="396" y="352" fill="currentColor">Kofu (Yamanashi)</text>
+
+  <line x1="522" y1="348" x2="544" y2="348" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="548" y="352" fill="#cc0000">酷暑日 (40°C)</text>
+
+</svg>
 
 The dashed red line marks the new kokushobi threshold. Kofu effectively lived above it for a three-week stretch in late July and early August — a sustained period that would have been statistically unthinkable in the 1990s.
 
