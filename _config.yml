@@ -32,6 +32,8 @@ webmaster_verifications:
 
 analytics:
   google:
+    # Leave empty in the repo. GitHub Actions injects the GA4 measurement ID
+    # from the GA_MEASUREMENT_ID secret for production builds.
     id:
 
 pageviews:

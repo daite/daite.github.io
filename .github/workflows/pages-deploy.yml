@@ -40,8 +40,18 @@ jobs:
           ruby-version: 3.4
           bundler-cache: true
 
+      - name: Prepare analytics config
+        run: |
+          cat <<EOF > _config.analytics.yml
+          analytics:
+            google:
+              id: "${GA_MEASUREMENT_ID}"
+          EOF
+        env:
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll b --config _config.yml,_config.analytics.yml -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
 

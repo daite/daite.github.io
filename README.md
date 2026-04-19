@@ -83,6 +83,19 @@ Your content here...
 
 Pushes to `main` trigger the `pages-deploy.yml` workflow, which builds the site with Jekyll and deploys to GitHub Pages.
 
+## Analytics
+
+The site is wired for **Google Analytics 4 (GA4)** using Chirpy's built-in analytics support.
+
+To enable tracking in production:
+
+1. Create a GA4 web data stream for `https://daite.github.io`.
+2. Copy the measurement ID, which looks like `G-XXXXXXXXXX`.
+3. In GitHub, open this repository's **Settings > Secrets and variables > Actions**.
+4. Add a repository secret named `GA_MEASUREMENT_ID` with that value.
+
+The deploy workflow injects this secret at build time, so the tracking ID is not stored in the repo. Local development builds keep analytics disabled unless you intentionally provide your own override config.
+
 ## Links
 
 - GitHub: [github.com/daite](https://github.com/daite)
