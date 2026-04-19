@@ -341,3 +341,12 @@ What the data across both years shows is not just record peaks but an accelerati
 Language matters in public health. Studies of typhoon preparedness have repeatedly shown that named, categorised threats drive faster and more consistent protective behaviour than numerical warnings alone. The JMA's decision to coin *kokushobi* is a communications strategy: give the thing a name and people will remember what the name means.
 
 It is also an acknowledgement. The old vocabulary, built in a cooler era, no longer fits the weather Japan is living through. Adding a rung at the top of the ladder is not an act of resignation — it is the necessary precondition for talking clearly about what is coming.
+
+## References
+
+- NHK Web News — [酷暑日とは？ 気象庁が新しい用語を制定](https://news.web.nhk/newsweb/na/na-k10015101371000) (April 2026)
+- Japan Meteorological Agency — [2024年夏 40°C以上を観測した地点一覧](https://www.data.jma.go.jp/stats/stat/202415/amd_mxtem_ov40_202415.html)
+- Japan Meteorological Agency — [2025年夏 40°C以上を観測した地点一覧](https://www.data.jma.go.jp/stats/stat/202515/amd_mxtem_ov40_202515.html)
+- Japan Meteorological Agency — [過去の気象データ検索 (ETRN)](https://www.data.jma.go.jp/stats/etrn/index.php) — daily station data for Tokyo (47662), Osaka (47772), Kofu (47638)
+- The Japan Times — [JMA introduces new name for days of 40°C heat](https://www.japantimes.co.jp/news/2026/04/17/japan/japan-severely-hot-day/) (April 17, 2026)
+- Nippon.com — [Japan's Highest Temperatures: New Record of 41.8°C Set in August 2025](https://www.nippon.com/en/japan-data/h02498/)
