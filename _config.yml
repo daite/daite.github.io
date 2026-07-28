@@ -39,8 +39,6 @@ analytics:
 pageviews:
   provider:
 
-theme_mode: light
-
 cdn:
 
 social_preview_image:
