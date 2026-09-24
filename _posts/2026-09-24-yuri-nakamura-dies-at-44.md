@@ -3,6 +3,9 @@ title: "Actress Yuri Nakamura (中村ゆり) Dies at 44 After a Private Battle W
 date: 2026-09-24 09:00:00 +0900
 categories: [Culture, Japan]
 tags: [japan, drama, yuri-nakamura, actress, obituary, netflix]
+image:
+  path: /assets/img/posts/yuri-nakamura-tiff-2022-preview.jpg
+  alt: "Yuri Nakamura at the Tokyo International Film Festival, October 2022 (Photo: Dick Thomas Johnson, CC BY 2.0, via Wikimedia Commons)"
 ---
 
 Actress Yuri Nakamura (中村ゆり, real name 中村友理) died of rectal cancer on September 1, 2026, at age 44. Her agency, Alpha Agency, announced the death on September 14. She died surrounded by her family and close friends, and a private funeral was held with relatives and colleagues.
@@ -84,3 +87,4 @@ May she rest in peace. 心よりご冥福をお祈りいたします。
 - [中村ゆり — Wikipedia](https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E3%82%86%E3%82%8A)
 - [Yuri Nakamura — Wikipedia](https://en.wikipedia.org/wiki/Yuri_Nakamura)
 - [中村ゆりの出演ドラマ一覧 — WEBザテレビジョン](https://thetv.jp/person/1000030353/drama/)
+- Photo: [Nakamura Yuri at the Tokyo International Film Festival 2022 — Dick Thomas Johnson, CC BY 2.0, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nakamura_Yuri_from_%22by_the_window%22_at_Red_Carpet_of_the_Tokyo_International_Film_Festival_2022_(52461354464).jpg)
